@@ -1,0 +1,42 @@
+Determining if the function wsyncup exists in the /usr/lib/x86_64-linux-gnu/libcurses.so passed with the following output:
+Change Dir: /home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/cmake-3.22.1/Source/Checks/Curses-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c1e5a/fast && gmake  -f CMakeFiles/cmTC_c1e5a.dir/build.make CMakeFiles/cmTC_c1e5a.dir/build
+gmake[1]: Entering directory '/home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/cmake-3.22.1/Source/Checks/Curses-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c1e5a.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=wsyncup -o CMakeFiles/cmTC_c1e5a.dir/CheckFunctionExists.c.o -c /home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/cmake-3.22.1/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c1e5a
+/home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/cmake-3.22.1/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_c1e5a.dir/link.txt --verbose=1
+/usr/bin/gcc  -DCHECK_FUNCTION_EXISTS=wsyncup -rdynamic CMakeFiles/cmTC_c1e5a.dir/CheckFunctionExists.c.o -o cmTC_c1e5a  -lcurses 
+gmake[1]: Leaving directory '/home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/cmake-3.22.1/Source/Checks/Curses-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function cbreak exists in the /usr/lib/x86_64-linux-gnu/libncurses.so passed with the following output:
+Change Dir: /home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/cmake-3.22.1/Source/Checks/Curses-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cb3d3/fast && gmake  -f CMakeFiles/cmTC_cb3d3.dir/build.make CMakeFiles/cmTC_cb3d3.dir/build
+gmake[1]: Entering directory '/home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/cmake-3.22.1/Source/Checks/Curses-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cb3d3.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=cbreak -o CMakeFiles/cmTC_cb3d3.dir/CheckFunctionExists.c.o -c /home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/cmake-3.22.1/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cb3d3
+/home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/cmake-3.22.1/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_cb3d3.dir/link.txt --verbose=1
+/usr/bin/gcc  -DCHECK_FUNCTION_EXISTS=cbreak -rdynamic CMakeFiles/cmTC_cb3d3.dir/CheckFunctionExists.c.o -o cmTC_cb3d3  -lncurses 
+gmake[1]: Leaving directory '/home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/cmake-3.22.1/Source/Checks/Curses-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function nodelay exists in the /usr/lib/x86_64-linux-gnu/libncurses.so passed with the following output:
+Change Dir: /home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/cmake-3.22.1/Source/Checks/Curses-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_99ff9/fast && gmake  -f CMakeFiles/cmTC_99ff9.dir/build.make CMakeFiles/cmTC_99ff9.dir/build
+gmake[1]: Entering directory '/home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/cmake-3.22.1/Source/Checks/Curses-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_99ff9.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=nodelay -o CMakeFiles/cmTC_99ff9.dir/CheckFunctionExists.c.o -c /home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/cmake-3.22.1/Modules/CheckFunctionExists.c
+Linking C executable cmTC_99ff9
+/home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/cmake-3.22.1/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_99ff9.dir/link.txt --verbose=1
+/usr/bin/gcc  -DCHECK_FUNCTION_EXISTS=nodelay -rdynamic CMakeFiles/cmTC_99ff9.dir/CheckFunctionExists.c.o -o cmTC_99ff9  -lncurses 
+gmake[1]: Leaving directory '/home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/cmake-3.22.1/Source/Checks/Curses-build/CMakeFiles/CMakeTmp'
+
+
+
