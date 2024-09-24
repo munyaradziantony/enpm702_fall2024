@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.20.0)
-project(exercise3 VERSION 0.1.0)
+project(exercise2 VERSION 0.1.0)
 
 # Compilation flags
 add_compile_options(-Wall)
 
 # Add executable
-add_executable(exercise3 exercise3/src/exercise3.cpp)
+add_executable(exercise2 exercise2/src/exercise2.cpp)
 
 # add_custom_command(TARGET exercise1 POST_BUILD
 #     COMMAND ./exercise1 | c++filt -t
@@ -34,4 +34,4 @@ add_executable(exercise3 exercise3/src/exercise3.cpp)
 # )
 
 # Set C++ standard to C++17
-set_property(TARGET exercise3 PROPERTY CXX_STANDARD 17)
+set_property(TARGET exercise2 PROPERTY CXX_STANDARD 17)

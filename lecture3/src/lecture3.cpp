@@ -315,12 +315,12 @@ int main() {
 
 
 
-str quote  = ("Just a flesh wound!")
-for (i : string lenth) :
+// str quote  = ("Just a flesh wound!")
+// for (i : string lenth) :
 
-std::cout << [1] "\n";
+// std::cout << [1] "\n";
 
-return 0
+// return 0
 
-int length = quote.length();
-for (int i=0; i< leng)
+// int length = quote.length();
+// for (int i=0; i< leng)
