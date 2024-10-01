@@ -1,0 +1,27 @@
+
+/**
+ * @file lecture5.hpp
+ * @author Zeid Kootbally (zeidk@umd.edu)
+ * @brief Code for lecture on Functions
+ * @version 1.0
+ * @date 2024-09-21
+ *
+ * @copyright Copyright (c) 2024
+ *
+ */
+
+/**
+ * @brief This function prints a number
+ * 
+ * @param mnumber Number to be printed 
+ */
+void print_number(int mnumber);
+
+
+/**
+ * @brief Prompt the user for a number
+ * 
+ * More accurate description
+ * 
+ */
+void prompt_user();

@@ -1,7 +1,7 @@
 /**
- * @file lecture3.cpp
+ * @file lecture4.cpp
  * @author Zeid Kootbally (zeidk@umd.edu)
- * @brief Code for lecture on STL Containers
+ * @brief Code for lecture on Containers
  * @version 0.1
  * @date 2024-09-15
  *
@@ -543,8 +543,8 @@ int main() {
     //     std::cout << '\n';
     // }
 
-    //</> 33
-    //=====================
+    // </> 33
+    // =====================
     // std::vector<int> vec1 = {1, 2, 3};
     // std::vector<int> vec2 = {1, 2, 3, 4, 5};
 
@@ -558,7 +558,7 @@ int main() {
     // std::cout << "Initial size: " << vec.size() << '\n';
     // std::cout << "Initial capacity: " << vec.capacity() << '\n';
 
-    // // Reserve space
+    // Reserve space
     // vec.reserve(20);
     // std::cout << "Size: " << vec.size() << '\n';
     // std::cout << "Capacity: " << vec.capacity() << '\n';
@@ -614,9 +614,9 @@ int main() {
     
     //</> 37
     //=====================
-    // std::vector<int> my_vector;
+    //std::vector<int> my_vector;
 
-    // // Add elements to the vector using push_back()
+    // Add elements to the vector using push_back()
     // my_vector.push_back(10);
     // my_vector.push_back(20);
     // my_vector.push_back(30);
