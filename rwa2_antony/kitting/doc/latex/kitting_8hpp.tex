@@ -1,0 +1,268 @@
+\hypertarget{kitting_8hpp}{}\doxysection{include/kitting.hpp File Reference}
+\label{kitting_8hpp}\index{include/kitting.hpp@{include/kitting.hpp}}
+
+
+Code for kitting manufactring processing.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{kitting_8hpp_a391fb6eb1f62755ee0ff858ae5ceebdb}{get\+\_\+bin\+\_\+counts}} (unsigned int \&green\+\_\+bin, unsigned int \&blue\+\_\+bin, unsigned int \&red\+\_\+bin)
+\begin{DoxyCompactList}\small\item\em Gets the number of blocks in each bin from the user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{kitting_8hpp_ab002f2954df9f79013ca929c21f4f43b}{get\+\_\+tray\+\_\+requirements}} (unsigned int \&tray\+\_\+green, unsigned int \&tray\+\_\+blue, unsigned int \&tray\+\_\+red, unsigned int green\+\_\+bin, unsigned int blue\+\_\+bin, unsigned int red\+\_\+bin)
+\begin{DoxyCompactList}\small\item\em Gets the number of blocks for each color to place in the tray. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{kitting_8hpp_afb435e5335b8385bffecd548a66573bf}{pick\+\_\+block}} (unsigned int \&bin\+\_\+count, bool \&gripper\+\_\+status)
+\begin{DoxyCompactList}\small\item\em Picks a block from the bin using the gripper. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{kitting_8hpp_a1eddac60b693d7c98f43f4716cc03c6f}{place\+\_\+block}} (unsigned int \&tray\+\_\+count, bool \&gripper\+\_\+status)
+\begin{DoxyCompactList}\small\item\em Places a block from the gripper into the tray. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{kitting_8hpp_a41bc877d4ced4b1153f96204cd7fc1ad}{display\+\_\+current\+\_\+state}} (unsigned int green\+\_\+bin, unsigned int blue\+\_\+bin, unsigned int red\+\_\+bin, unsigned int tray\+\_\+green, unsigned int tray\+\_\+blue, unsigned int tray\+\_\+red, bool gripper\+\_\+status)
+\begin{DoxyCompactList}\small\item\em Displays the current state of the system, including bins, tray, and gripper status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{kitting_8hpp_a40bfe1258048aa7f8ce24a3545d7eac3}{plan}} (unsigned int \&green\+\_\+bin, unsigned int \&blue\+\_\+bin, unsigned int \&red\+\_\+bin, unsigned int tray\+\_\+goal\+\_\+green, unsigned int tray\+\_\+goal\+\_\+blue, unsigned int tray\+\_\+goal\+\_\+red)
+\begin{DoxyCompactList}\small\item\em Generates a plan to pick and place blocks from bins to a tray until the goal is met. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{kitting_8hpp_ab0e5df9f47c0141198e495af8882003f}{is\+\_\+tray\+\_\+complete}} (unsigned int tray\+\_\+goal\+\_\+green, unsigned int tray\+\_\+goal\+\_\+blue, unsigned int tray\+\_\+goal\+\_\+red, unsigned int tray\+\_\+green, unsigned int tray\+\_\+blue, unsigned int tray\+\_\+red)
+\begin{DoxyCompactList}\small\item\em Checks if the tray has the required number of blocks for all colors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{kitting_8hpp_a4b2f8fc12c67c121cbfef62c12f24bbe}{perform\+\_\+task}} (const std\+::string \&task, unsigned int \&bin\+\_\+count, unsigned int \&tray\+\_\+count, bool \&gripper\+\_\+status)
+\begin{DoxyCompactList}\small\item\em Performs a specified task ({\ttfamily pick\+\_\+block} or {\ttfamily place\+\_\+block}) on the blocks using the gripper. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{kitting_8hpp_a842a141eb000db04e592a044a6746ff5}{generate\+Plan}} (unsigned int green\+\_\+bin, unsigned int blue\+\_\+bin, unsigned int red\+\_\+bin, unsigned int tray\+\_\+goal\+\_\+green, unsigned int tray\+\_\+goal\+\_\+blue, unsigned int tray\+\_\+goal\+\_\+red)
+\begin{DoxyCompactList}\small\item\em Generates and executes a plan to move blocks from bins to the tray based on specified goals. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Code for kitting manufactring processing. 
+
+\begin{DoxyAuthor}{Author}
+Munyaradzi Antony (\href{mailto:mantony2@umd.edu}{\texttt{ mantony2@umd.\+edu}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/10-\/05
+\end{DoxyDate}
+rwa2\+\_\+antony 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{kitting_8hpp_a41bc877d4ced4b1153f96204cd7fc1ad}\label{kitting_8hpp_a41bc877d4ced4b1153f96204cd7fc1ad}} 
+\index{kitting.hpp@{kitting.hpp}!display\_current\_state@{display\_current\_state}}
+\index{display\_current\_state@{display\_current\_state}!kitting.hpp@{kitting.hpp}}
+\doxysubsubsection{\texorpdfstring{display\_current\_state()}{display\_current\_state()}}
+{\footnotesize\ttfamily void display\+\_\+current\+\_\+state (\begin{DoxyParamCaption}\item[{unsigned int}]{green\+\_\+bin,  }\item[{unsigned int}]{blue\+\_\+bin,  }\item[{unsigned int}]{red\+\_\+bin,  }\item[{unsigned int}]{tray\+\_\+green,  }\item[{unsigned int}]{tray\+\_\+blue,  }\item[{unsigned int}]{tray\+\_\+red,  }\item[{bool}]{gripper\+\_\+status }\end{DoxyParamCaption})}
+
+
+
+Displays the current state of the system, including bins, tray, and gripper status. 
+
+This function displays the current number of blocks in each bin and tray for the colors (green, blue, and red). Additionally, it indicates the status of the gripper, showing whether it is holding a block or is empty. The function supports default values for all parameters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em green\+\_\+bin\+\_\+count} & Current number of green blocks in the bin (default is 0). \\
+\hline
+\mbox{\texttt{ in}}  & {\em blue\+\_\+bin\+\_\+count} & Current number of blue blocks in the bin (default is 0). \\
+\hline
+\mbox{\texttt{ in}}  & {\em red\+\_\+bin\+\_\+count} & Current number of red blocks in the bin (default is 0). \\
+\hline
+\mbox{\texttt{ in}}  & {\em green\+\_\+tray\+\_\+count} & Current number of green blocks in the tray (default is 0). \\
+\hline
+\mbox{\texttt{ in}}  & {\em blue\+\_\+tray\+\_\+count} & Current number of blue blocks in the tray (default is 0). \\
+\hline
+\mbox{\texttt{ in}}  & {\em red\+\_\+tray\+\_\+count} & Current number of red blocks in the tray (default is 0). \\
+\hline
+\mbox{\texttt{ in}}  & {\em gripper\+\_\+status} & Current status of the gripper\+: true if holding a block, false if empty (default is true). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{kitting_8hpp_a842a141eb000db04e592a044a6746ff5}\label{kitting_8hpp_a842a141eb000db04e592a044a6746ff5}} 
+\index{kitting.hpp@{kitting.hpp}!generatePlan@{generatePlan}}
+\index{generatePlan@{generatePlan}!kitting.hpp@{kitting.hpp}}
+\doxysubsubsection{\texorpdfstring{generatePlan()}{generatePlan()}}
+{\footnotesize\ttfamily void generate\+Plan (\begin{DoxyParamCaption}\item[{unsigned int}]{green\+\_\+bin,  }\item[{unsigned int}]{blue\+\_\+bin,  }\item[{unsigned int}]{red\+\_\+bin,  }\item[{unsigned int}]{tray\+\_\+goal\+\_\+green,  }\item[{unsigned int}]{tray\+\_\+goal\+\_\+blue,  }\item[{unsigned int}]{tray\+\_\+goal\+\_\+red }\end{DoxyParamCaption})}
+
+
+
+Generates and executes a plan to move blocks from bins to the tray based on specified goals. 
+
+This function outlines the strategy for picking and placing blocks of three colors (green, blue, and red) from their respective bins into a tray, based on the defined target values for each color. It then invokes the plan function to carry out the detailed steps and provides real-\/time updates to the user throughout the process.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em green\+\_\+bin\+\_\+count} & Initial count of green blocks in the green bin. \\
+\hline
+\mbox{\texttt{ in}}  & {\em blue\+\_\+bin\+\_\+count} & Initial count of blue blocks in the blue bin. \\
+\hline
+\mbox{\texttt{ in}}  & {\em red\+\_\+bin\+\_\+count} & Initial count of red blocks in the red bin. \\
+\hline
+\mbox{\texttt{ in}}  & {\em tray\+\_\+goal\+\_\+green} & Target count of green blocks to be placed in the tray. \\
+\hline
+\mbox{\texttt{ in}}  & {\em tray\+\_\+goal\+\_\+blue} & Target count of blue blocks to be placed in the tray. \\
+\hline
+\mbox{\texttt{ in}}  & {\em tray\+\_\+goal\+\_\+red} & Target count of red blocks to be placed in the tray. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{kitting_8hpp_a391fb6eb1f62755ee0ff858ae5ceebdb}\label{kitting_8hpp_a391fb6eb1f62755ee0ff858ae5ceebdb}} 
+\index{kitting.hpp@{kitting.hpp}!get\_bin\_counts@{get\_bin\_counts}}
+\index{get\_bin\_counts@{get\_bin\_counts}!kitting.hpp@{kitting.hpp}}
+\doxysubsubsection{\texorpdfstring{get\_bin\_counts()}{get\_bin\_counts()}}
+{\footnotesize\ttfamily void get\+\_\+bin\+\_\+counts (\begin{DoxyParamCaption}\item[{unsigned int \&}]{green\+\_\+bin,  }\item[{unsigned int \&}]{blue\+\_\+bin,  }\item[{unsigned int \&}]{red\+\_\+bin }\end{DoxyParamCaption})}
+
+
+
+Gets the number of blocks in each bin from the user. 
+
+This function prompts the user to enter the number of blocks for three bins (green, blue, and red), ensuring the count is between 0 and 10 inclusive. It keeps requesting input until all values are within the specified range.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em green\+\_\+bin\+\_\+count} & Reference to the number of blocks in the green bin. \\
+\hline
+\mbox{\texttt{ out}}  & {\em blue\+\_\+bin\+\_\+count} & Reference to the number of blocks in the blue bin. \\
+\hline
+\mbox{\texttt{ out}}  & {\em red\+\_\+bin\+\_\+count} & Reference to the number of blocks in the red bin. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{kitting_8hpp_ab002f2954df9f79013ca929c21f4f43b}\label{kitting_8hpp_ab002f2954df9f79013ca929c21f4f43b}} 
+\index{kitting.hpp@{kitting.hpp}!get\_tray\_requirements@{get\_tray\_requirements}}
+\index{get\_tray\_requirements@{get\_tray\_requirements}!kitting.hpp@{kitting.hpp}}
+\doxysubsubsection{\texorpdfstring{get\_tray\_requirements()}{get\_tray\_requirements()}}
+{\footnotesize\ttfamily void get\+\_\+tray\+\_\+requirements (\begin{DoxyParamCaption}\item[{unsigned int \&}]{tray\+\_\+green,  }\item[{unsigned int \&}]{tray\+\_\+blue,  }\item[{unsigned int \&}]{tray\+\_\+red,  }\item[{unsigned int}]{green\+\_\+bin,  }\item[{unsigned int}]{blue\+\_\+bin,  }\item[{unsigned int}]{red\+\_\+bin }\end{DoxyParamCaption})}
+
+
+
+Gets the number of blocks for each color to place in the tray. 
+
+This function prompts the user to enter the number of blocks for three colors (green, blue, and red) to be placed in a tray. It validates that the input values do not exceed the available count for each bin and that the total number of blocks does not surpass 10. The function will continue to prompt the user until all inputs are valid.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em green\+\_\+tray\+\_\+count} & Reference to the number of green blocks to place in the tray. \\
+\hline
+\mbox{\texttt{ out}}  & {\em blue\+\_\+tray\+\_\+count} & Reference to the number of blue blocks to place in the tray. \\
+\hline
+\mbox{\texttt{ out}}  & {\em red\+\_\+tray\+\_\+count} & Reference to the number of red blocks to place in the tray. \\
+\hline
+\mbox{\texttt{ in}}  & {\em green\+\_\+bin\+\_\+count} & Total number of green blocks available in the bin. \\
+\hline
+\mbox{\texttt{ in}}  & {\em blue\+\_\+bin\+\_\+count} & Total number of blue blocks available in the bin. \\
+\hline
+\mbox{\texttt{ in}}  & {\em red\+\_\+bin\+\_\+count} & Total number of red blocks available in the bin. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{kitting_8hpp_ab0e5df9f47c0141198e495af8882003f}\label{kitting_8hpp_ab0e5df9f47c0141198e495af8882003f}} 
+\index{kitting.hpp@{kitting.hpp}!is\_tray\_complete@{is\_tray\_complete}}
+\index{is\_tray\_complete@{is\_tray\_complete}!kitting.hpp@{kitting.hpp}}
+\doxysubsubsection{\texorpdfstring{is\_tray\_complete()}{is\_tray\_complete()}}
+{\footnotesize\ttfamily bool is\+\_\+tray\+\_\+complete (\begin{DoxyParamCaption}\item[{unsigned int}]{tray\+\_\+goal\+\_\+green,  }\item[{unsigned int}]{tray\+\_\+goal\+\_\+blue,  }\item[{unsigned int}]{tray\+\_\+goal\+\_\+red,  }\item[{unsigned int}]{tray\+\_\+green,  }\item[{unsigned int}]{tray\+\_\+blue,  }\item[{unsigned int}]{tray\+\_\+red }\end{DoxyParamCaption})}
+
+
+
+Checks if the tray has the required number of blocks for all colors. 
+
+This function checks if the current count of green, blue, and red blocks in the tray matches their respective target values. If all the counts reach their goals, the tray is marked as complete.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em tray\+\_\+goal\+\_\+green} & The required number of green blocks to complete the tray. \\
+\hline
+\mbox{\texttt{ in}}  & {\em tray\+\_\+goal\+\_\+blue} & The required number of blue blocks to complete the tray. \\
+\hline
+\mbox{\texttt{ in}}  & {\em tray\+\_\+goal\+\_\+red} & The required number of red blocks to complete the tray. \\
+\hline
+\mbox{\texttt{ in}}  & {\em green\+\_\+tray\+\_\+count} & The current count of green blocks in the tray. \\
+\hline
+\mbox{\texttt{ in}}  & {\em blue\+\_\+tray\+\_\+count} & The current count of blue blocks in the tray. \\
+\hline
+\mbox{\texttt{ in}}  & {\em red\+\_\+tray\+\_\+count} & The current count of red blocks in the tray.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if all block counts match their respective goals, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{kitting_8hpp_a4b2f8fc12c67c121cbfef62c12f24bbe}\label{kitting_8hpp_a4b2f8fc12c67c121cbfef62c12f24bbe}} 
+\index{kitting.hpp@{kitting.hpp}!perform\_task@{perform\_task}}
+\index{perform\_task@{perform\_task}!kitting.hpp@{kitting.hpp}}
+\doxysubsubsection{\texorpdfstring{perform\_task()}{perform\_task()}}
+{\footnotesize\ttfamily void perform\+\_\+task (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{task,  }\item[{unsigned int \&}]{bin\+\_\+count,  }\item[{unsigned int \&}]{tray\+\_\+count,  }\item[{bool \&}]{gripper\+\_\+status }\end{DoxyParamCaption})}
+
+
+
+Performs a specified task ({\ttfamily pick\+\_\+block} or {\ttfamily place\+\_\+block}) on the blocks using the gripper. 
+
+This function simulates either picking a block from a bin or placing a block into a tray based on the specified task. It validates the prerequisites for each action and updates the counts accordingly. For a pick\+\_\+block task, it ensures the bin has blocks and the gripper is empty before picking. For a place\+\_\+block task, it verifies that the gripper is holding a block before placing it into the tray.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em task} & The task to be performed, either \char`\"{}pick\+\_\+block\char`\"{} or \char`\"{}place\+\_\+block\char`\"{}. \\
+\hline
+\mbox{\texttt{ out}}  & {\em bin\+\_\+count} & Reference to the current count of blocks in the bin. Decreases when a block is picked. \\
+\hline
+\mbox{\texttt{ out}}  & {\em tray\+\_\+count} & Reference to the current count of blocks in the tray. Increases when a block is placed. \\
+\hline
+\mbox{\texttt{ out}}  & {\em gripper\+\_\+status} & Reference to the status of the gripper. Set to {\ttfamily true} when holding a block, {\ttfamily false} when empty. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{kitting_8hpp_afb435e5335b8385bffecd548a66573bf}\label{kitting_8hpp_afb435e5335b8385bffecd548a66573bf}} 
+\index{kitting.hpp@{kitting.hpp}!pick\_block@{pick\_block}}
+\index{pick\_block@{pick\_block}!kitting.hpp@{kitting.hpp}}
+\doxysubsubsection{\texorpdfstring{pick\_block()}{pick\_block()}}
+{\footnotesize\ttfamily void pick\+\_\+block (\begin{DoxyParamCaption}\item[{unsigned int \&}]{bin\+\_\+count,  }\item[{bool \&}]{gripper\+\_\+status }\end{DoxyParamCaption})}
+
+
+
+Picks a block from the bin using the gripper. 
+
+This function simulates picking a block from a specified bin and holding it with the gripper. It first verifies that the bin contains at least one block and that the gripper is empty. If both conditions are satisfied, the function reduces the bin count by one and updates the gripper status to true
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em bin\+\_\+count} & Reference to the current count of blocks in the bin. This value is decreased by one when a block is picked. \\
+\hline
+\mbox{\texttt{ out}}  & {\em gripper\+\_\+status} & Reference to the gripper status. It is set to {\ttfamily true} when the gripper picks a block. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{kitting_8hpp_a1eddac60b693d7c98f43f4716cc03c6f}\label{kitting_8hpp_a1eddac60b693d7c98f43f4716cc03c6f}} 
+\index{kitting.hpp@{kitting.hpp}!place\_block@{place\_block}}
+\index{place\_block@{place\_block}!kitting.hpp@{kitting.hpp}}
+\doxysubsubsection{\texorpdfstring{place\_block()}{place\_block()}}
+{\footnotesize\ttfamily void place\+\_\+block (\begin{DoxyParamCaption}\item[{unsigned int \&}]{tray\+\_\+count,  }\item[{bool \&}]{gripper\+\_\+status }\end{DoxyParamCaption})}
+
+
+
+Places a block from the gripper into the tray. 
+
+This function simulates placing a block from the gripper into a tray. It first checks whether the gripper is holding a block. If so, the function increments the tray count by one and updates the gripper status to false, indicating that it is now empty.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em tray\+\_\+count} & Reference to the current count of blocks in the tray. This value is increased by one when a block is placed. \\
+\hline
+\mbox{\texttt{ out}}  & {\em gripper\+\_\+status} & Reference to the gripper status. It is set to {\ttfamily false} when a block is placed in the tray. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{kitting_8hpp_a40bfe1258048aa7f8ce24a3545d7eac3}\label{kitting_8hpp_a40bfe1258048aa7f8ce24a3545d7eac3}} 
+\index{kitting.hpp@{kitting.hpp}!plan@{plan}}
+\index{plan@{plan}!kitting.hpp@{kitting.hpp}}
+\doxysubsubsection{\texorpdfstring{plan()}{plan()}}
+{\footnotesize\ttfamily void plan (\begin{DoxyParamCaption}\item[{unsigned int \&}]{green\+\_\+bin,  }\item[{unsigned int \&}]{blue\+\_\+bin,  }\item[{unsigned int \&}]{red\+\_\+bin,  }\item[{unsigned int}]{tray\+\_\+goal\+\_\+green,  }\item[{unsigned int}]{tray\+\_\+goal\+\_\+blue,  }\item[{unsigned int}]{tray\+\_\+goal\+\_\+red }\end{DoxyParamCaption})}
+
+
+
+Generates a plan to pick and place blocks from bins to a tray until the goal is met. 
+
+This function simulates a series of pick-\/and-\/place operations for blocks of three colors (green, blue, and red). It cycles through the bins, picks up blocks using the gripper, and transfers them to the tray until the desired count for each color is achieved. The function provides detailed output, showing each step and the current status of blocks in both the bins and tray
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em green\+\_\+bin\+\_\+count} & Reference to the count of green blocks remaining in the bin. \\
+\hline
+\mbox{\texttt{ out}}  & {\em blue\+\_\+bin\+\_\+count} & Reference to the count of blue blocks remaining in the bin. \\
+\hline
+\mbox{\texttt{ out}}  & {\em red\+\_\+bin\+\_\+count} & Reference to the count of red blocks remaining in the bin. \\
+\hline
+\mbox{\texttt{ in}}  & {\em tray\+\_\+goal\+\_\+green} & Number of green blocks required in the tray. \\
+\hline
+\mbox{\texttt{ in}}  & {\em tray\+\_\+goal\+\_\+blue} & Number of blue blocks required in the tray. \\
+\hline
+\mbox{\texttt{ in}}  & {\em tray\+\_\+goal\+\_\+red} & Number of red blocks required in the tray. \\
+\hline
+\end{DoxyParams}

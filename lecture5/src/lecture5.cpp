@@ -12,7 +12,10 @@
 #include <iostream>
 #include <typeinfo>  // needed for typeid
 #include <vector>
+<<<<<<< HEAD
 #include"print
+=======
+>>>>>>> upstream/main
 
 
 //</> 1
@@ -474,7 +477,11 @@
 //     int z{};
 //     z = g(x, y);
 //     std::cout << z << '\n';
+<<<<<<< HEAD
 }
+=======
+// }
+>>>>>>> upstream/main
 
 //</> 31
 //=====================
@@ -520,8 +527,11 @@
 //         std::cout << "Argument " << i << ": " << argv[i] << '\n';
 //     }
 // }
+<<<<<<< HEAD
 // int sum(int a , int b);
 
 // int main(){
 //     sum(2,3);
 // }
+=======
+>>>>>>> upstream/main

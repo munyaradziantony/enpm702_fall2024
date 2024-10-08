@@ -9,6 +9,7 @@
  * @copyright Copyright (c) 2024
  *
  */
+<<<<<<< HEAD
 
 /**
  * @brief This function prints a number
@@ -25,3 +26,5 @@ void print_number(int mnumber);
  * 
  */
 void prompt_user();
+=======
+>>>>>>> upstream/main
