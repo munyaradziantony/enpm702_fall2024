@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.20.0)
 <<<<<<< HEAD
-project(lecture5 VERSION 0.1.0)
+project(lecture7 VERSION 0.1.0)
 
-include_directories(lecture5/include)
+include_directories(lecture7/include)
 =======
-project(lecture4 VERSION 0.1.0)
+project(lecture7 VERSION 0.1.0)
 
 >>>>>>> upstream/main
 
@@ -13,15 +13,17 @@ add_compile_options(-Wall)
 
 # Add executable
 <<<<<<< HEAD
-add_executable(lecture5 lecture5/src/lecture5.cpp)
+
+add_executable(lecture7 lecture7/src/lecture7.cpp)
+
 =======
-add_executable(lecture4 lecture4/src/lecture4.cpp)
+add_executable(lecture7 lecture7/src/lecture7.cpp)
 
 >>>>>>> upstream/main
 
 
-# add_custom_command(TARGET lecture1 POST_BUILD
-#     COMMAND ./lecture1 | c++filt -t
+# add_custom_command(TARGET lecture7 POST_BUILD
+#     COMMAND ./lecture7 | c++filt -t
 #     WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
 #     COMMENT "Resolve name mangling"
 #     VERBATIM
@@ -50,7 +52,7 @@ add_executable(lecture4 lecture4/src/lecture4.cpp)
 <<<<<<< HEAD
 
 # Set C++ standard to C++17
-set_property(TARGET lecture5 PROPERTY CXX_STANDARD 17)
+set_property(TARGET lecture7 PROPERTY CXX_STANDARD 17)
 =======
 # add_custom_command(TARGET lecture3 POST_BUILD
 #     COMMAND valgrind --show-error-list=yes --leak-check=full --show-leak-kinds=all --track-origins=yes ./lecture3
@@ -68,6 +70,6 @@ set_property(TARGET lecture5 PROPERTY CXX_STANDARD 17)
 
 
 # Set C++ standard to C++17
-set_property(TARGET lecture4 PROPERTY CXX_STANDARD 17)
+set_property(TARGET lecture7 PROPERTY CXX_STANDARD 17)
 >>>>>>> upstream/main
 
