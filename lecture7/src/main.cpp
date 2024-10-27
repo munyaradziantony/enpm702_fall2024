@@ -2,38 +2,38 @@
 #include <iostream>
 
 namespace my_namemspace{
-    class A{
+    class A {
         public:
             // default constructor 
             A() :a1_{1} ,a2_{2} {
-                std::cout << "Default constructor called ....\n"
+                std::cout << "Default constructor called ....\n";
             /* body of the constructor*/
          }
 
          //parameter constructor
-         
+         A(int a1, int a2){
+            std::cout << "Parameterized Constructor called...\n";
+            a1_ = a1;
+            a2_ = a2;
+         }
 
+         //Destructor
+         ~A() {
+            std::cout << "Destructor called...\n";
+         }
 
-    private int
+    private:
+        //Member Variables
+        int a1_;
+        int a2_;
 
-
-}// class A
-
+    protected:
+        //Nothing
+    };//Class A
 }//namespace my_namespace
 
-// int main(){
-//     my_namemspace::A first;
-//     my_namemspace::A second(1, 2)
-// }
-
-// #include "date.hpp"
-
-// int main() {
-//     university::Date date;
-// }
-
-// //</>--- code #1
-// //=====================
+//</>--- code #1
+//=====================
 
 // #include <iostream>
 // #include <memory>
@@ -74,13 +74,6 @@ namespace my_namemspace{
 // int main() {
 //     university::Date date;
 //     date.print_date();
-//     std::cout << date.day_ << '\n';
-
-//     auto u_date = std::make_unique<university::Date>();
-//     (*u_date).print_date();
-//     u_date->print_date();
-//     std::cout << (*u_date).day_ << '\n';
-//     std::cout << u_date->day_ << '\n';
 // }
 
 //</>--- code #4
@@ -126,20 +119,15 @@ namespace my_namemspace{
 // #include "date.hpp"
 
 // int main() {
-//     university::Date date1;  // default ctor
-
-//     auto u_date2 = std::make_unique<university::Date>();  // default ctor
-
 //     // parameterized ctor
-//     university::Date date3{1, 2, 1980};
+//     university::Date date{22, 2, 2023};
+//     date.print_date();
 
-//     // parameterized ctor
-//     auto u_date4 = std::make_unique<university::Date>(1, 2, 1980);
+//     date.get_test();
 // }
 
-
-// //</> code #7
-// //=====================
+//</> code #7
+//=====================
 // #include "code7.hpp"
 
 // int main(){
@@ -232,4 +220,31 @@ namespace my_namemspace{
 //         std::cout << "--- Second object" << '\n';
 //         MyClass my_class;  // Object created!
 //     }  // Object destroyed!
+// }
+
+//</>--- code #19
+//=====================
+// #include <iostream>
+// #include "code19.hpp"
+
+// void test(Temperature celcius) {
+//     std::cout << celcius.get_celsius() << '\n';
+// }
+
+// int main() {
+//     test(36.5);
+// }
+
+//</>--- code #20
+//=====================
+// #include <iostream>
+// #include "code20.hpp"
+
+
+// void test(Unit unit) {
+//     unit.print_units();
+// }
+
+// int main() {
+//     test(3.5);
 // }

@@ -1,4 +1,4 @@
-#include "date.hpp"
+#include "driving/date.hpp"
 
 #include <cstddef>
 #include <iostream>
@@ -38,6 +38,7 @@ bool driving::Date::is_valid_date(ushort day, ushort month, ushort year) const {
     if (day < 1 || day > days_in_month) return false;
 
     return true;
+<<<<<<< HEAD
 }
 
 // void driving::Date::get_attribute_offsets() const {
@@ -45,3 +46,6 @@ bool driving::Date::is_valid_date(ushort day, ushort month, ushort year) const {
 //     std::cout << "Offset of 'month_': " << offsetof(Date, month_) << '\n';
 //     std::cout << "Offset of 'year_': " << offsetof(Date, year_) << '\n';
 // }
+=======
+}
+>>>>>>> upstream/main
