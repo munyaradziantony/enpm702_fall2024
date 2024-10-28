@@ -8,7 +8,7 @@ add_compile_options(-Wall)
 include_directories(lecture7/include)
 # Add executable
 add_executable(lecture7 
-    lecture7/src/main.cpp)
+    lecture7/src/main.cpp lecture7/src/date.cpp)
 
 # add_custom_command(TARGET lecture7 POST_BUILD
 #     COMMAND valgrind --show-error-list=yes --leak-check=full --show-leak-kinds=all --track-origins=yes ./lecture7

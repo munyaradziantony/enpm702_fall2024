@@ -162,33 +162,33 @@
 // }
 
 // Solution to a quadratic equation
-int main(){
-    //input the coefficient
-    std::cout<< "==========================================\n";
-    std::cout << "For an equation Ax^2 + Bx + C = 0.\nEnter the values of A, B and C \n";
-    std::cout << "Enter value of A :";
-    int A;
-    std::cin >> A;
+// int main(){
+//     //input the coefficient
+//     std::cout<< "==========================================\n";
+//     std::cout << "For an equation Ax^2 + Bx + C = 0.\nEnter the values of A, B and C \n";
+//     std::cout << "Enter value of A :";
+//     int A;
+//     std::cin >> A;
 
-    std::cout << "Enter value of B :";
-    int B;
-    std::cin >> B;
+//     std::cout << "Enter value of B :";
+//     int B;
+//     std::cin >> B;
 
-    std::cout << "Enter value of C :";
-    int C;
-    std::cin >> C;
+//     std::cout << "Enter value of C :";
+//     int C;
+//     std::cin >> C;
 
-    float x1value;
-    x1value = (-B + sqrt(B*B  - 4*A*C )) / (2*A);
+//     float x1value;
+//     x1value = (-B + sqrt(B*B  - 4*A*C )) / (2*A);
 
-    float x2value;
-    x2value = (-B - sqrt(B*B  - 4*A*C )) / (2*A);
+//     float x2value;
+//     x2value = (-B - sqrt(B*B  - 4*A*C )) / (2*A);
 
-    //printing the result
-    std::cout<< "==========================================\n";
-    std::cout << "Soution to the equation is : X1Value "<< x1value<<" & X2Value :"<<x2value <<"\n\n";
+//     //printing the result
+//     std::cout<< "==========================================\n";
+//     std::cout << "Soution to the equation is : X1Value "<< x1value<<" & X2Value :"<<x2value <<"\n\n";
 
-    return 0;
-}
+//     return 0;
+// }
     
 
