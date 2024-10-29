@@ -310,17 +310,18 @@ int main() {
     // p1_int = p2_int;
     // *p1_int = 500;
     // delete p1_int;
+
+
+
+
+
+    // str quote  = ("Just a flesh wound!")
+    // for (i : string lenth) :
+
+    // std::cout << [1] "\n";
+
+    // return 0
+
+    // int length = quote.length();
+    // for (int i=0; i< leng)
 }
-
-
-
-
-// str quote  = ("Just a flesh wound!")
-// for (i : string lenth) :
-
-// std::cout << [1] "\n";
-
-// return 0
-
-// int length = quote.length();
-// for (int i=0; i< leng)

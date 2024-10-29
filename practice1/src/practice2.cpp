@@ -2,6 +2,8 @@
 #include<memory>
 #include<math.h>
 #include<cctype>
+#include<string>
+#include<iostream>
 
 // //=================swap function======================================
 // void swap_numbers(int* first_number , int* second_number){
@@ -52,3 +54,31 @@
 
 
 //}
+
+
+class Person {
+    private:
+        
+        int age_;
+    
+    public:
+        std::string name_;
+        
+        Person(std::string name , int age ):
+            name_(name),
+            age_(age) {};
+
+        void great(){
+            std::cout<< "My name is "<<name_<<std::endl;
+        }       
+
+};//class Person
+
+
+
+int main () {
+    Person person1 = Person("Munya",25);
+    person1.great();
+    person1.
+}
+        
