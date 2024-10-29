@@ -25,6 +25,7 @@ class Vehicle {
     std::unique_ptr<driving::Engine> engine_;
     std::shared_ptr<driving::Driver> driver_;
 
+<<<<<<< HEAD
     public:
     Vehicle(const std::string& model, const std ::string& color , unsigned int horsepower) : 
     model_{model},
@@ -36,6 +37,8 @@ class Vehicle {
         std::unique_ptr<driving::Engine> engine_;
         std::unique_ptr<driving::Engine> driver_;
 
+=======
+>>>>>>> upstream/main
 };  // class Vehicle
 
 // /**

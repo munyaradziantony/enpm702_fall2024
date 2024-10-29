@@ -10,6 +10,7 @@ namespace my_namemspace{
             /* body of the constructor*/
          }
 
+<<<<<<< HEAD
          //parameter constructor
          A(int a1, int a2){
             std::cout << "Parameterized Constructor called...\n";
@@ -32,6 +33,8 @@ namespace my_namemspace{
     };//Class A
 }//namespace my_namespace
 
+=======
+>>>>>>> upstream/main
 namespace my_namespace {
 class A {
    public:
