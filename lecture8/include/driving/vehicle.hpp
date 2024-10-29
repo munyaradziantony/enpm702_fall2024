@@ -13,32 +13,7 @@ class Driver;
 class Engine;
 
 class Vehicle {
-   public:
-    Vehicle(const std::string& model, const std::string& color, unsigned int horsepower) : model_{model}, color_{color},
-        engine_{std::make_unique<driving::Engine>(horsepower)} { /*body*/ }
-    void drive(double distance);
-    void set_driver(std::shared_ptr<driving::Driver> driver);
-
-   private:
-    std::string model_;
-    std::string color_;
-    std::unique_ptr<driving::Engine> engine_;
-    std::shared_ptr<driving::Driver> driver_;
-
-<<<<<<< HEAD
-    public:
-    Vehicle(const std::string& model, const std ::string& color , unsigned int horsepower) : 
-    model_{model},
-    color_{color},
-    engine_{std::make_unique<driving::Engine>(horsepower)}
-    private:
-        std::string model_;
-        std::string color_;
-        std::unique_ptr<driving::Engine> engine_;
-        std::unique_ptr<driving::Engine> driver_;
-
-=======
->>>>>>> upstream/main
+    /* write content of the class here*/
 };  // class Vehicle
 
 // /**

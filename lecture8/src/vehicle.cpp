@@ -9,6 +9,7 @@
 // ===========================================
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // void driving::Vehicle::drive(double distance) {
 //     if(driver_){
 //         if (engine_) {
@@ -23,6 +24,8 @@
 //     driver_ = driver;
 // }
 =======
+=======
+>>>>>>> 643531be5ce296978eaf6b7b4767da09d4a30f44
 void driving::Vehicle::drive(double distance) {
     if(driver_){
         if (engine_) {
@@ -36,7 +39,10 @@ void driving::Vehicle::drive(double distance) {
 void driving::Vehicle::set_driver(std::shared_ptr<driving::Driver> driver) {
     driver_ = driver;
 }
+<<<<<<< HEAD
 >>>>>>> upstream/main
+=======
+>>>>>>> 643531be5ce296978eaf6b7b4767da09d4a30f44
 
 // // ===========================================
 // // ElectricVehicle
@@ -138,6 +144,7 @@ void driving::Vehicle::set_driver(std::shared_ptr<driving::Driver> driver) {
 
 // // // ===========================================
 <<<<<<< HEAD
+<<<<<<< HEAD
 // // void driving::GasolineVehicle::drive(double distance) {
 // //     Vehicle::drive(distance);
 // //     double fuel_needed = distance * fuel_consumption_rate_;
@@ -151,6 +158,8 @@ void driving::Vehicle::set_driver(std::shared_ptr<driving::Driver> driver) {
 // //     }
 // // }
 =======
+=======
+>>>>>>> 643531be5ce296978eaf6b7b4767da09d4a30f44
 // void driving::GasolineVehicle::drive(double distance) {
 //     Vehicle::drive(distance);
 //     double fuel_needed = distance * fuel_consumption_rate_;
@@ -163,4 +172,7 @@ void driving::Vehicle::set_driver(std::shared_ptr<driving::Driver> driver) {
 //         fuel_level_ = 0;
 //     }
 // }
+<<<<<<< HEAD
 >>>>>>> upstream/main
+=======
+>>>>>>> 643531be5ce296978eaf6b7b4767da09d4a30f44
