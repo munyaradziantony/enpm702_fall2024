@@ -32,6 +32,32 @@ namespace my_namemspace{
     };//Class A
 }//namespace my_namespace
 
+namespace my_namespace {
+class A {
+   public:
+    A() : a1_{1}, a2_{2} {
+        // open a file
+        // open a socket
+        /* body of the constructor */
+    }
+
+    A(int x, int y) : a1_{x}, a2_{y} {
+        /* body of the constructor */
+    }
+    ~A(){}
+
+   private:
+    int a1_;
+    int a2_;
+
+};  // class A
+}  // namespace my_namespace
+
+int main() {
+    my_namespace::A first;
+    first.a1_;
+    // my_namespace::A second(1, 2);
+}
 //</>--- code #1
 //=====================
 
@@ -239,7 +265,6 @@ namespace my_namemspace{
 //=====================
 // #include <iostream>
 // #include "code20.hpp"
-
 
 // void test(Unit unit) {
 //     unit.print_units();

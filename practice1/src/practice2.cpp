@@ -4,6 +4,8 @@
 #include<cctype>
 #include<string>
 #include<iostream>
+#include<vector>
+#include<array>
 
 // //=================swap function======================================
 // void swap_numbers(int* first_number , int* second_number){
@@ -56,29 +58,93 @@
 //}
 
 
-class Person {
-    private:
+// class Person {
+//     private:
         
-        int age_;
+//         int age_;
     
-    public:
-        std::string name_;
+//     public:
+//         std::string name_;
         
-        Person(std::string name , int age ):
-            name_(name),
-            age_(age) {};
+//         Person(std::string name , int age ):
+//             name_(name),
+//             age_(age) {};
 
-        void great(){
-            std::cout<< "My name is "<<name_<<std::endl;
-        }       
+//         void great(){
+//             std::cout<< "My name is "<<name_<<std::endl;
+//         }       
 
-};//class Person
+// };//class Person
 
 
 
-int main () {
-    Person person1 = Person("Munya",25);
-    person1.great();
-    person1.
+// int main () {
+//     Person person1 = Person("Munya",25);
+//     person1.great();
+//     person1.
+// }
+
+
+// //Q1
+// class Sensor{
+//     private:
+//         int id_;
+
+//     public:
+//         Sensor(int id): id_{id}{};
+
+// }
+
+// //Q2
+// class Battery {
+//     private:
+//         float voltage_;
+
+//     public:
+//         Battery(float voltage): voltage_{voltage} {}
+
+// }
+
+// //Q3
+// class Motor{
+//     private:
+//         bool is_active_;
+
+//     public:
+//         Motor(bool is_active) : is_active_{is_active}{}
+// }
+
+// //Q4
+// class TemperatureSensor{
+//     private:
+//         double temperature_;
+
+//     public:
+//         TemperatureSensor(double temperature) : temperature_{temperature}{}
+// }
+
+// //Q9
+// class Path{
+//     private:
+//         std::vector<int> coodinates_;
+//     public:
+//         Path(const std::vector<int>& coodinates) : coodinates_{coodinates}{}
+// }
+
+// //10
+// class Robot{
+//     private:
+//         std::string name_;
+
+//     public:
+//         Robot(const std::string& name) : name_{name}{}
+// }
+
+//Q11
+class Trajectory{
+    private:
+        std::array<float, 5> distances_;
+    public:
+        Trajectory(const std::array<float, 5>& distances) : distances_{distances}{}
 }
         

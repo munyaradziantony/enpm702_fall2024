@@ -7,7 +7,10 @@ add_compile_options(-Wall)
 
 include_directories(lecture3/include)
 # Add executable
-add_executable(lecture3 lecture3/src/lecture3.cpp)
+add_executable(lecture8 
+    lecture8/src/main.cpp lecture8/src/date.cpp lecture8/src/engine.cpp
+    lecture8/src/driver.cpp
+    lecture8/src/vehicle.cpp)
 
 add_custom_command(TARGET lecture3 POST_BUILD
     COMMAND valgrind --show-error-list=yes --leak-check=full --show-leak-kinds=all --track-origins=yes ./lecture7
