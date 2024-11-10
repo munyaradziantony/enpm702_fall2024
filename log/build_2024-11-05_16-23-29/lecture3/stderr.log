@@ -1,0 +1,9 @@
+[31mCMake Error at CMakeLists.txt:15 (add_custom_command):
+  No TARGET 'lecture3' has been created in this directory.
+
+[0m
+[31mCMake Error at CMakeLists.txt:31 (set_property):
+  set_property could not find TARGET lecture3.  Perhaps it has not yet been
+  created.
+
+[0m

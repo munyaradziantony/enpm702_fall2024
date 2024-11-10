@@ -1,0 +1,2 @@
+Invoking command in '/home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/build/lecture3': /usr/local/bin/cmake /home/munyaantony/enpm702_cpp_ws/enpm702_fall2024 -DCMAKE_INSTALL_PREFIX=/home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/install/lecture3
+Invoked command in '/home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/build/lecture3' returned '1': /usr/local/bin/cmake /home/munyaantony/enpm702_cpp_ws/enpm702_fall2024 -DCMAKE_INSTALL_PREFIX=/home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/install/lecture3

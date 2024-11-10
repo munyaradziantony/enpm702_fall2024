@@ -140,11 +140,75 @@
 //         Robot(const std::string& name) : name_{name}{}
 // }
 
-//Q11
-class Trajectory{
+// //Q11
+// class Trajectory{
+//     private:
+//         std::array<float, 5> distances_;
+//     public:
+//         Trajectory(const std::array<float, 5>& distances) : distances_{distances}{}
+// }
+
+// //Q13
+// class Library{
+//     private:
+//         std::vector<std::string> books_;
+//     public:
+//         Library(const std::vector<std::string>& books) : books_{books}{}
+// };
+
+// //Q14
+// class Grid {
+//     private:
+//         std::array<std::array<int, 3>, 3> layout_;
+//     public:
+//         Grid(const std::array<std::array<int, 3>, 3>& layout) : layout_{layout}{}
+// };
+
+// //Q15
+// class Collection{
+//     private:
+//         std::vector<double> items_;
+//     public:
+//         Collection(const std::vector<double>& items) : items_{items}{}
+// };
+
+// //q16
+// class Warehouse{
+//     private:
+//         std::vector<int> item_ids_;
+//     public:
+//         Warehouse(const std::vector<int>& item_ids) : item_ids_{item_ids}{}
+    
+// };
+
+// //Q17
+// class History{
+//     private:
+//         std::array<float, 5> events_;
+//     public:
+//         History(const std::array<float, 5>& events) : events_{events}{}
+// };
+
+// //Q18
+// class Playlist{
+//     private:
+//         std::vector<std::string> songs_;
+//     public:
+//         Playlist(const std::vector<std::string>& songs) : songs_{songs}{}
+// };
+
+// class Node{
+//     private:
+//         std::unique_ptr<Node> next_;
+//     public:
+//         Node(std::unique_ptr<Node> next) : next_{std::move(next)}{}
+// };
+
+class Vehicle{};
+
+class Fleet{
     private:
-        std::array<float, 5> distances_;
-    public:
-        Trajectory(const std::array<float, 5>& distances) : distances_{distances}{}
-}
         
+    public:
+
+}

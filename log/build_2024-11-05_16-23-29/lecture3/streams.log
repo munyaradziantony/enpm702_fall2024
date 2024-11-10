@@ -1,0 +1,24 @@
+[0.014s] Invoking command in '/home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/build/lecture3': /usr/local/bin/cmake /home/munyaantony/enpm702_cpp_ws/enpm702_fall2024 -DCMAKE_INSTALL_PREFIX=/home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/install/lecture3
+[0.318s] -- The C compiler identification is GNU 11.4.0
+[0.596s] -- The CXX compiler identification is GNU 11.4.0
+[0.636s] -- Detecting C compiler ABI info
+[0.812s] -- Detecting C compiler ABI info - done
+[0.843s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.844s] -- Detecting C compile features
+[0.846s] -- Detecting C compile features - done
+[0.868s] -- Detecting CXX compiler ABI info
+[1.084s] -- Detecting CXX compiler ABI info - done
+[1.117s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.118s] -- Detecting CXX compile features
+[1.120s] -- Detecting CXX compile features - done
+[1.122s] [31mCMake Error at CMakeLists.txt:15 (add_custom_command):
+[1.123s]   No TARGET 'lecture3' has been created in this directory.
+[1.123s] 
+[1.123s] [0m
+[1.123s] [31mCMake Error at CMakeLists.txt:31 (set_property):
+[1.123s]   set_property could not find TARGET lecture3.  Perhaps it has not yet been
+[1.124s]   created.
+[1.124s] 
+[1.124s] [0m
+[1.124s] -- Configuring incomplete, errors occurred!
+[1.130s] Invoked command in '/home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/build/lecture3' returned '1': /usr/local/bin/cmake /home/munyaantony/enpm702_cpp_ws/enpm702_fall2024 -DCMAKE_INSTALL_PREFIX=/home/munyaantony/enpm702_cpp_ws/enpm702_fall2024/install/lecture3
