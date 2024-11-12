@@ -13,7 +13,19 @@ class Driver;
 class Engine;
 
 class Vehicle {
-    /* write content of the class here*/
+   public:
+    Vehicle(const std::string& model, const std::string& color, unsigned int horsepower) : model_{model}, color_{color},
+        engine_{std::make_unique<driving::Engine>(horsepower)} { /*body*/ }
+    virtual void drive(double distance) = 0;
+   
+    void set_driver(std::shared_ptr<driving::Driver> driver);
+    virtual ~Vehicle(){}
+   private:
+    std::string model_;
+    std::string color_;
+    std::unique_ptr<driving::Engine> engine_;
+    std::shared_ptr<driving::Driver> driver_;
+
 };  // class Vehicle
 
 /**
@@ -43,7 +55,7 @@ class ElectricVehicle : public Vehicle {
      *
      * @note If the battery level becomes too low to complete the distance, the vehicle may stop prematurely.
      */
-    // void drive(double distance);
+    void drive(double distance) override;
 
     /**
      * @brief Display the current battery level.
@@ -169,7 +181,7 @@ class GasolineVehicle : public Vehicle {
      *
      * @note If the fuel level becomes too low to complete the distance, the vehicle may stop prematurely.
      */
-    // void drive(double distance);
+    void drive(double distance) override;
 
     /**
      * @brief Display the current fuel level in the vehicle's tank.
