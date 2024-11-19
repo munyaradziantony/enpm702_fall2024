@@ -1,18 +1,16 @@
 cmake_minimum_required(VERSION 3.20.0)
-project(lecture3 VERSION 0.1.0)
+project(lecture10 VERSION 0.1.0)
 
 
 # Compilation flags
 add_compile_options(-Wall)
 
-include_directories(lecture3/include)
+include_directories(lecture10/include)
 # Add executable
-add_executable(lecture8 
-    lecture8/src/main.cpp lecture8/src/date.cpp lecture8/src/engine.cpp
-    lecture8/src/driver.cpp
-    lecture8/src/vehicle.cpp)
+add_executable(lecture10 
+    lecture10/src/main.cpp lecture10)
 
-add_custom_command(TARGET lecture3 POST_BUILD
+add_custom_command(TARGET lecture10 POST_BUILD
     COMMAND valgrind --show-error-list=yes --leak-check=full --show-leak-kinds=all --track-origins=yes ./lecture7
     WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
     COMMENT "Running Valgrind after building lecture7"
@@ -28,5 +26,5 @@ add_custom_target(run_valgrind ALL
 
 
 #Set C++ standard to C++17
-set_property(TARGET lecture3 PROPERTY CXX_STANDARD 17)
+set_property(TARGET lecture10 PROPERTY CXX_STANDARD 17)
 

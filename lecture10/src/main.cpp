@@ -3,8 +3,8 @@
 #include <functional>
 #include <iostream>
 
-//</>--- Function Pointers - code #1
-//====================================
+// </>--- Function Pointers - code #1
+// ====================================
 // int add(int a, int b) { return a + b; }
 
 // int main() {
@@ -204,7 +204,7 @@
 
 // //</>--- Lambda Functions - code #9
 // //===========================================
-// // Function that accepts a callback of type std::function
+// Function that accepts a callback of type std::function
 // void execute_cb(int x, const std::function<int(int)>& callback) {
 //     std::cout << "Result: " << callback(x) << '\n';
 // }
@@ -251,23 +251,23 @@
 // //</>--- std::bind - code #12
 // //===========================================
 
-// class Calculator {
-//    public:
-//     // Member function that adds two numbers
-//     int add(int a, int b) { return a + b; }
-// };
+class Calculator {
+   public:
+    // Member function that adds two numbers
+    int add(int a, int b) { return a + b; }
+};
 
-// // Function that accepts a callback
-// void execute_cb(int x, const std::function<int(int)>& callback) {
-//     std::cout << "Result: " << callback(x) << '\n';
-// }
+// Function that accepts a callback
+void execute_cb(int x, const std::function<int(int)>& callback) {
+    std::cout << "Result: " << callback(x) << '\n';
+}
 
-// int main() {
-//     Calculator calc;  // Create an instance of Calculator
+int main() {
+    Calculator calc;  // Create an instance of Calculator
 
-//     // Bind the first argument of `add` to 10, leaving the second argument as a placeholder
-//     auto bound_add = std::bind(&Calculator::add, calc, 10, std::placeholders::_1);
+    // Bind the first argument of `add` to 10, leaving the second argument as a placeholder
+    auto bound_add = std::bind(&Calculator::add, calc, 10, std::placeholders::_1);
 
-//     // Pass bound_add as a method to execute_cb
-//     execute_cb(20, bound_add);  // Equivalent to calc.add(10, 20)
-// }
+    // Pass bound_add as a method to execute_cb
+    execute_cb(20, bound_add);  // Equivalent to calc.add(10, 20)
+}
